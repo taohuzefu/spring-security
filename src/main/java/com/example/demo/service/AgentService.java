@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 public class AgentService {
   @Autowired AgentRepository agentRepository;
 
-  public Agent getAgent(Long id) {
+  public Agent getAgent(String userName) {
     return agentRepository
-        .findById(id)
+        .findByUserName(userName)
         .orElseThrow(() -> new RuntimeException("can not find agent by id"));
   }
 }
