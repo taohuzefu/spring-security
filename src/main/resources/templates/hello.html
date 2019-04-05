@@ -9,5 +9,6 @@
         <form th:action="@{/logout}" method="post">
             <input type="submit" value="Sign Out"/>
         </form>
+        <a class="btn btn-danger" th:href="@{/user}" th:if="${#httpServletRequest.remoteUser}">个人中心</a>
     </body>
 </html>
