@@ -37,6 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   }
 
   /*    @Bean
+  //new user in memory
   @Override
   public UserDetailsService userDetailsService() {
       UserDetails user =
@@ -49,5 +50,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
       return new InMemoryUserDetailsManager(user);
   }*/
 
-  // TODO PasswordEncoder
 }
